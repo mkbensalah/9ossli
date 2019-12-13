@@ -1,0 +1,33 @@
+.bt{
+  font-size: 14px;
+  font-weight: 700;
+  width: 180px;
+  height: 40px;
+  color: rgb(251, 35, 90);
+  cursor: pointer;
+  margin: 0px 20px;
+  background: transparent;
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+  border-color: rgb(251, 35, 90);
+  border-image: initial;
+  border-radius: 3px;
+
+  outline: 0px;
+  font-family: Montserrat, sans-serif
+}
+
+.bt:hover{
+  background-color: rgb(251, 35, 90);
+  color: white;
+}
+.ab:hover{
+  box-sizing: border-box;
+  box-shadow: rgb(251, 35, 90) 0px 1px 0px 0px;
+}
+a:active{
+  box-sizing: border-box;
+  box-shadow: rgb(251, 35, 90) 0px 1px 0px 0px;
+}
+
