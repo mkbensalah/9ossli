@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './common/nav-bar/nav-bar.component';
 import { TicketTypeComponent } from './components/ticket-type/ticket-type.component';
 import { MainComponentComponent } from './components/main-component/main-component.component';
+import { FormsModule} from '@angular/forms';
+import { MatchTicketsComponent } from './components/match-tickets/match-tickets.component'
 
 
 @NgModule({
@@ -13,11 +15,13 @@ import { MainComponentComponent } from './components/main-component/main-compone
     AppComponent,
     NavBarComponent,
     TicketTypeComponent,
-    MainComponentComponent
+    MainComponentComponent,
+    MatchTicketsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

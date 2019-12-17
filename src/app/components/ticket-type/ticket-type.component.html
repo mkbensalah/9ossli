@@ -1,10 +1,10 @@
 <div class="container">
-  <span class="sp">Chose your type</span>
+  <span class="sp">Choose your type</span>
   <div class="radio-tile-group">
 
     <div class="input-container ph">
 
-      <input id="walk" class="radio-button" type="radio" name="radio" />
+      <input id="walk"  [(ngModel)]="type" value="1"  class="radio-button" type="radio" name="radio" />
       <div class="radio-tile">
         <div class="icon walk-icon">
 
@@ -16,7 +16,7 @@
     </div>
 
     <div class="input-container  ph2" id="tt">
-      <input id="bike" class="radio-button" type="radio" name="radio" />
+      <input id="bike" [(ngModel)]="type" value="2" class="radio-button" type="radio" name="radio" />
       <div class="radio-tile">
         <div class="icon bike-icon">
 
@@ -35,7 +35,7 @@
         <span style="font-size: 14px;font-weight: 400;color: rgb(45, 48, 85);display: block;word-break: normal;line-height: 22px !important;">
         get all information needed and details
       </span>
-        <input type="radio" checked="checked" name="radio3">
+        <input checked  type="radio"   value="11" (change)="changeopt($event.target.value)"  name="radio3">
         <span class="checkmark"></span>
       </label>
     </div>
@@ -46,7 +46,7 @@
         <span style="font-size: 14px;font-weight: 400;color: rgb(45, 48, 85);display: block;word-break: normal;line-height: 22px !important;">
         get all available and make a reservation
       </span>
-        <input type="radio"  name="radio3">
+        <input  value="22"  type="radio"  name="radio3" (change)="changeopt($event.target.value)">
         <span class="checkmark"></span>
       </label>
     </div>
@@ -61,6 +61,6 @@
     cancel
   </button>
 
-    <button  class="bt" style="margin: 0.4rem;" >Continue</button>
+    <button (click)="redirection()"  class="bt" style="margin: 0.4rem;" >Continue</button>
   </div>
 </div>

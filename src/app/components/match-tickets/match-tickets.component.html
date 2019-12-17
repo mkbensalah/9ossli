@@ -1,0 +1,172 @@
+<div class="container">
+    <span class="sp">All matches</span>
+    <div class="general">
+        <div style="border-bottom: 1px solid rgb(208, 216, 229);margin: 0px 0px 20px;">
+            
+            <div class="row" style="display: flex;width: 100%;height: 40px;-webkit-box-pack: start;justify-content: start; align-items: flex-end;">
+                <div class="row general" >
+                    <div style="text-align: center;height: 30px;position: relative;top: 1px;" [ngClass]="{'putline': true}">
+                        <span style="cursor: pointer;color: rgb(45, 48, 85);word-break: normal;line-height: 22px !important;text-align: center;">
+                            <span [ngClass]="{'fw4': false,'fw7': true}" style="text-align: center;cursor: pointer;font-size: 14px;color: rgb(45, 48, 85);word-break: normal;line-height: 22px !important;padding: 5px 20px;">
+                                All
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="row general" >
+                    <div  style="text-align: center;height: 30px;position: relative;top: 1px;">
+                        <span style="cursor: pointer;color: rgb(45, 48, 85);word-break: normal;line-height: 22px !important;text-align: center;">
+                            <span [ngClass]="{'fw4': true,'fw7': false}" style="text-align: center;cursor: pointer;font-size: 14px;font-weight: 400;color: black;word-break: normal;line-height: 22px !important;padding: 5px 20px;">
+                                Most popular
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row general" >
+                    <div  style="text-align: center;height: 30px;position: relative;top: 1px;">
+                        <span style="cursor: pointer;color: rgb(45, 48, 85);word-break: normal;line-height: 22px !important;text-align: center;box-sizing: border-box;">
+                            <span [ngClass]="{'fw4': true,'fw7': false}" style="text-align: center;cursor: pointer;font-size: 14px;color: black;word-break: normal;line-height: 22px !important;padding: 5px 20px;">
+                                The news
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row general" >
+                    <div  style="text-align: center;height: 30px;position: relative;top: 1px;">
+                        <span style="cursor: pointer;color: rgb(45, 48, 85);word-break: normal;line-height: 22px !important;text-align: center;box-sizing: border-box;">
+                            <span [ngClass]="{'fw4': true,'fw7': false}" style="text-align: center;cursor: pointer;font-size: 14px;color: black;word-break: normal;line-height: 22px !important;padding: 5px 20px;">
+                                Soon full
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="general">
+            <div class="general" style="width: 50%;">
+                <div class="general" style="display: flex;-webkit-box-align: center;align-items: center;margin: 10px 0px 20px;">
+                    <div class="general" style="flex-basis: 45px;display: block;position: relative;line-height: 1.2;">
+                        <span style="font-size: 14px;font-weight: 400;color: rgb(141, 153, 174);word-break: normal;line-height: 22px !important;">
+                            Filter:
+                        </span>
+                    </div>
+                   
+                    <div class="filt general">
+                        <div style="margin: 0px 4px 0px 8px !important;">
+                            <button class="bt" type="button" (click)="myFunction()">
+                                <p style="text-align: center;">categories</p>
+                                <svg class="sg" width="8px" height="5px" color="#2d3055" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.34 11.78"><g id="Calque_2" data-name="Calque 2"><g id="Arrow-down"><path class="cls-1" d="M21,.37a1.07,1.07,0,0,0-1.52,0L10.65,9.18,1.84.32A1.07,1.07,0,0,0,.32.31a1.07,1.07,0,0,0,0,1.52l9.57,9.63a1.09,1.09,0,0,0,.76.32,1.07,1.07,0,0,0,.76-.32L21,1.89A1.07,1.07,0,0,0,21,.37Z"></path></g></g>
+                                    <g id="Calque_2" data-name="Calque 2"><g id="Arrow-down"><path class="cls-1" d="M21,.37a1.07,1.07,0,0,0-1.52,0L10.65,9.18,1.84.32A1.07,1.07,0,0,0,.32.31a1.07,1.07,0,0,0,0,1.52l9.57,9.63a1.09,1.09,0,0,0,.76.32,1.07,1.07,0,0,0,.76-.32L21,1.89A1.07,1.07,0,0,0,21,.37Z"></path></g></g>
+                                </svg>
+                                <div class="dd1" [ngClass]="{'show': show}" class="dropdown-content">
+                                    <div class="general" style="overflow-y: auto;max-height: 94%;padding: 5px 10px;">
+                                        <div style="align-items: center;margin: 5px 25px 10px;">
+                                            <div class="row" style="line-height: 1.2;">
+                                                <div style="display: inline-block;vertical-align: middle;-webkit-box-align: center;align-items: center;-webkit-box-pack: center;justify-content: center;box-sizing: border-box;width: 20px;height: 20px;background-color: rgb(45, 48, 85);cursor: pointer;border-width: 1px;border-style: solid;border-color: rgb(45, 48, 85);border-image: initial;border-radius: 3px;padding: 0px;margin: auto 0px;">
+                                                    <input type="checkbox" class="in" color="#2d3055" radius="3px">
+                                                    <div  style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: center;justify-content: center;width: 100%;height: 100%;font-size: 100%;font-family: Montserrat, sans-serif;vertical-align: baseline;transition: all 150ms ease 0s;">
+                                                        <div style="visibility: visible;content: '';display: block;height: 10px;width: calc(6px);transform: rotate(45deg);position: relative;bottom: 1px;border-style: solid;border-color: white;border-image: initial;border-width: 0px 1.5px 1.5px 0px;border-radius: 1px;">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div  style="display: block;padding-left: 10px; ">
+                                                    <span class="row" style="display: block;width: 11px;"></span>
+                                                </div>
+                                                <div  style="display: block;position: relative;line-height: 1.2;">
+                                                    <span  style="font-size: 12px;font-weight: 400;color: rgb(45, 48, 85);word-break: normal;line-height: 22px !important;">
+                                                        All categories
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul style="list-style-type: none;column-count: 2;padding: 0px 5px;display: block;list-style-type: disc;margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;">
+                                            <li style="margin-bottom: 10px;">
+                                                <div class="row" style="display: flex;-webkit-box-align: center;align-items: center;">
+
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-columns">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title that wraps to a new line</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+            <div class="card p-3">
+              <blockquote class="blockquote mb-0 card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">
+                  <small class="text-muted">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card bg-primary text-white text-center p-3">
+              <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                <footer class="blockquote-footer">
+                  <small>
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img" src="..." alt="Card image">
+            </div>
+            <div class="card p-3 text-right">
+              <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">
+                  <small class="text-muted">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+
+
+
+    </div>
+</div>
