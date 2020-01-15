@@ -8,7 +8,8 @@ import { TicketTypeComponent } from './components/ticket-type/ticket-type.compon
 import { MainComponentComponent } from './components/main-component/main-component.component';
 import { FormsModule} from '@angular/forms';
 import { MatchTicketsComponent } from './components/match-tickets/match-tickets.component'
-
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +17,14 @@ import { MatchTicketsComponent } from './components/match-tickets/match-tickets.
     NavBarComponent,
     TicketTypeComponent,
     MainComponentComponent,
-    MatchTicketsComponent
+    MatchTicketsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
