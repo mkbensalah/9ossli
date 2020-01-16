@@ -1,0 +1,14 @@
+<select (change)="onChangeCategory($event.target.value)">
+    <option value="10" selected disabled hidden>Seat Category</option>
+    <option *ngFor="let category of categories" [value]="category.value">
+      {{category.viewValue}}
+    </option>
+  </select>&nbsp;&nbsp;
+  <select (change)="onChangeNumberofTickets($event.target.value)">
+    <option value="10" selected disabled hidden>Number of Tickets</option>
+    <option *ngFor="let ticket of tickets" [value]="ticket.value">
+      {{ticket.viewValue}}
+    </option>
+  </select>
+  <br><br>
+<button (click)="pay(total)" width ="10px" class="btn btn-primary btn-block">Checkout ({{total}} TND)</button>

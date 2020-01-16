@@ -14,6 +14,7 @@ import {MatCardModule} from '@angular/material';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { PaymentComponent } from './components/payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RegisterComponent } from './components/register/register.component';
     CardComponent,
     CardsCollectionComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

@@ -21,7 +21,6 @@ export class NavBarComponent implements OnInit {
     }
     else { this.isConnected = true}
     this.username = localStorage.getItem('username')
-    console.log(localStorage.getItem('username'))
  
 }
 

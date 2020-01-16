@@ -6,6 +6,7 @@ export class Card {
         private teamB : String,
         private stadium : String,
         private gametime : String,
+        private startingPrice : number,
         private imglinkleague : String,
         private imglinkintro : String,
         private imglinkstadium : String = '../../../assets/img/stadium.png',

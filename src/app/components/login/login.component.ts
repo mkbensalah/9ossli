@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
 
   login(credentials){
     this.authentificatService.login(credentials).subscribe(
-      (response) => {
+      (response :any) => {
         const token = response.id;
         localStorage.setItem('token', token);
         localStorage.setItem('username', credentials['username']);

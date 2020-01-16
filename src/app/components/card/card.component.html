@@ -21,14 +21,13 @@
       }">
       {{card.stadium}}
       <br>
-      <img  src="{{card.imglinkclock}}" alt="Stadium" [ngStyle]="{
+      <img  src="{{card.imglinkclock}}" alt="Time" [ngStyle]="{
         'max-width' : '30px'
       }">
         {{card.gametime}}
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
+      <app-payment [startingPrice] = card.startingPrice></app-payment>
     </mat-card-actions>
   </mat-card>
     </div>
