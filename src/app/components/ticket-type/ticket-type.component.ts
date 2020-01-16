@@ -11,6 +11,10 @@ export class TicketTypeComponent implements OnInit {
   type: number;
   reservation: number;
   constructor(private router: Router) {
+    console.log(localStorage.getItem('token'))
+    if(!localStorage.getItem('token')){
+      this.router.navigate(['/login'])
+    }
     this.type = 0; 
     this.reservation = 11; 
   }

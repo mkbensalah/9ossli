@@ -1,0 +1,17 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "test": {
+    "host": "",
+    "port": 27017,
+    "url": "mongodb+srv://khalil:1234@clustertest-tzop2.mongodb.net/test?retryWrites=true&w=majority",
+    "database": "test",
+    "password": "1234",
+    "name": "test",
+    "user": "khalil",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}

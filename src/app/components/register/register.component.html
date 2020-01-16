@@ -1,0 +1,35 @@
+<form #Register="ngForm">
+
+    <label for="username">
+        Username
+    </label>
+    <input  
+    #usernameInput="ngModel"
+    required type="text" ngModel name="username" class="form-control" id="username">   
+    
+    <label for="email">
+        Email
+    </label>
+    <input email 
+    #mailInput="ngModel"
+    required type="text" ngModel name="email" class="form-control" id="email">   
+    <div class="alert alert-danger" *ngIf="mailInput.invalid && mailInput.dirty">
+        Your email is invalid
+    </div>
+
+
+    <label for="password">
+        Password
+    </label>
+    <input  required
+    #pwdInput="ngModel" 
+    type="password" minlength="5" ngModel name="password" class="form-control" id="email" id="password">   
+    <div class="alert alert-danger" *ngIf="pwdInput.invalid && pwdInput.touched">
+        Password must have at least 5 characters
+    </div>
+
+
+    <button [disabled]="Register.invalid" class="btn btn-primary" style="background-color: rgb(251, 35, 90);border-color: rgb(251, 35, 90);" (click)="register(Register.value)">
+        Regiter
+    </button>
+</form>

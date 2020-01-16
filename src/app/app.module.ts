@@ -10,7 +10,10 @@ import { FormsModule} from '@angular/forms';
 import { MatchTicketsComponent } from './components/match-tickets/match-tickets.component';
 import { CardComponent } from './components/card/card.component';
 import { CardsCollectionComponent } from './components/cards-collection/cards-collection.component'
-import {MatCardModule} from '@angular/material'
+import {MatCardModule} from '@angular/material';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +23,16 @@ import {MatCardModule} from '@angular/material'
     MainComponentComponent,
     MatchTicketsComponent,
     CardComponent,
-    CardsCollectionComponent
+    CardsCollectionComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
