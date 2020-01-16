@@ -3,6 +3,7 @@ import { MatchServicesService } from '../../service/match-services.service'
 import { MatchModule } from '../../modal/match/match.module'
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-match-tickets',
   templateUrl: './match-tickets.component.html',
