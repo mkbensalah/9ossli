@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthentificatServiceService} from '../../service/authentificat-service.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,11 @@ import { AuthentificatServiceService} from '../../service/authentificat-service.
 })
 export class LoginComponent implements OnInit {
 
-  constructor( private authentificatService: AuthentificatServiceService ) { }
+  constructor( private authentificatService: AuthentificatServiceService, private router: Router ) { 
+    if(localStorage.getItem('token')){
+      this.router.navigate(['/'])
+    }
+  }
 
   ngOnInit() {
   }
@@ -18,8 +23,15 @@ export class LoginComponent implements OnInit {
       (response) => {
         const token = response.id;
         localStorage.setItem('token', token);
+        localStorage.setItem('username', credentials['username']);
+        
+        
+        if(token){
+          this.router.navigate(['/TicketType']);
+        }
       }
     );
+    
   }
 
 }

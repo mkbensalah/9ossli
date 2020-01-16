@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { MatchServicesService } from '../../service/match-services.service'
 import { MatchModule } from '../../modal/match/match.module'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-match-tickets',
@@ -12,7 +13,13 @@ export class MatchTicketsComponent implements OnInit {
   matches: MatchModule [];
   match: MatchModule ;
   
-  constructor( private matchService: MatchServicesService) {
+  constructor( private matchService: MatchServicesService, private router:Router) {
+    console.log(localStorage.getItem('token'))
+    if(!localStorage.getItem('token')){
+      this.router.navigate(['/login'])
+    }
+
+
     this.show = false;
     
     }

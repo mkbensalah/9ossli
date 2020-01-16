@@ -6,10 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-
-  constructor() { }
+  isConnected: Boolean ;
+  username: String;
+  constructor() { 
+    
+    }
 
   ngOnInit() {
   }
+
+  ngDoCheck() {
+    if(!localStorage.getItem('token')){
+      this.isConnected = false
+    }
+    else { this.isConnected = true}
+    this.username = localStorage.getItem('username')
+    console.log(localStorage.getItem('username'))
+ 
+}
 
 }

@@ -10,6 +10,7 @@ import { FormsModule} from '@angular/forms';
 import { MatchTicketsComponent } from './components/match-tickets/match-tickets.component'
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LoginComponent } from './components/login/login.component';
     TicketTypeComponent,
     MainComponentComponent,
     MatchTicketsComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
