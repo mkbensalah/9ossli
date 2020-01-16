@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
+
 @Component({
   selector: 'app-match-tickets',
   templateUrl: './match-tickets.component.html',
@@ -7,8 +8,10 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class MatchTicketsComponent implements OnInit {
   show : boolean
+  
   constructor() {
     this.show = false;
+    
    }
 
   ngOnInit() {
